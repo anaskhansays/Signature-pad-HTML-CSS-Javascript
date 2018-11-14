@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.outer{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:800px;height: 400px;
+}
+
+.outer .part1{
+    width:100%;
+    height:100%;
+    background: #456689;
+    transform: skewX(-30deg);
+    box-shadow: 0 0 0 15px #fff;
+    transition: .5s;
+}
+
+.outer .part2{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #252525;
+    z-index:-1;
+    transition: 1s;
+}
+
+.outer:hover .part2{
+    transform: scaleX(1.5) scaleY(.8);
+}
+
+.outer .content{
+    position: absolute;
+    top:20px;
+    left:20px;
+    bottom:20px;
+    right:20px;
+    background: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+}
+
+.outer .content h1{
+    margin:0;
+    padding: 0;
+    color:#252525;
+    font-weight: 700;
+}
+
+.outer .content p{
+    
+    font-weight: 400;
+}
+
+.outer .content a{
+    display: inline-block;
+    text-decoration: none;
+    margin:10px;
+    padding: 10px 20px;
+    background: #f05f40;
+    color:#fff;
